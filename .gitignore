@@ -1,0 +1,12 @@
+# Node
+node_modules/
+dist/
+
+# Env files
+.env
+
+# Logs
+*.log
+
+# Docker
+postgres-data/
