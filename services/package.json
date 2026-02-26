@@ -1,0 +1,9 @@
+{
+  "name": "job-system",
+  "private": true,
+  "workspaces": [
+    "services/*",
+    "packages/*",
+    "packages/*/*"
+  ]
+}
