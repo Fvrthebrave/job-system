@@ -3,10 +3,12 @@ node_modules/
 dist/
 
 # Env files
-.env
 
 # Logs
 *.log
 
 # Docker
 postgres-data/
+config.bat
+temp_auto_push.bat
+temp_interactive_push.bat

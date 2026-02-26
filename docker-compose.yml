@@ -20,7 +20,9 @@ services:
       - "6379:6379"
 
   api:
-    build: ./services/api
+    build:
+      context: .
+      dockerfile: services/api/Dockerfile
     container_name: job_api
     ports:
       - "3000:3000"
@@ -32,7 +34,9 @@ services:
       - redis
 
   worker:
-    build: ./services/worker
+    build:
+      context: .
+      dockerfile: services/worker/Dockerfile
     container_name: job_worker
     environment:
       DATABASE_URL: postgres://jobuser:jobpass@postgres:5432/jobdb
@@ -40,6 +44,5 @@ services:
     depends_on:
       - postgres
       - redis
-
 volumes:
   pgdata:

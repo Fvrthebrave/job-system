@@ -1,0 +1,13 @@
+{
+  "name": "job-system",
+  "private": true,
+  "workspaces": [
+    "services/*",
+    "packages/*",
+    "packages/*/*"
+  ],
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2"
+  }
+}

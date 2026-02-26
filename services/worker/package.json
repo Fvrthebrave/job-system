@@ -18,6 +18,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "@job-system/contracts": "1.0.0",
     "ioredis": "^5.9.3",
     "pg": "^8.18.0"
   }
